@@ -1,12 +1,10 @@
 import { Container } from '@mui/material'
+import Cipher from './features/cipher/Cipher';
 
 const App = () => (
-  <>
-    <header>
-    </header>
-    <Container maxWidth="xl" component="main">
-    </Container>
-  </>
+  <Container maxWidth="xl" component="main">
+    <Cipher />
+  </Container>
 );
 
 export default App;
