@@ -1,5 +1,4 @@
-
 export interface Cipher {
-    message: string;
-    password: string;
+  message: string;
+  password: string;
 }
