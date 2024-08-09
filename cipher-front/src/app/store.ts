@@ -1,8 +1,9 @@
 import { configureStore } from '@reduxjs/toolkit';
+import { cipherReducer } from '../features/cipher/cipherSlice';
 
 export const store = configureStore({
   reducer: {
-    // products: cipherReducer,
+    cipher: cipherReducer,
   }
 });
 
