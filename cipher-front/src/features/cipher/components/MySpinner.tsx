@@ -12,10 +12,10 @@ const MySpinner = () => {
       zIndex: 1111,
       pt: 50,
     }}
-          container
-          justifyContent="center"
+      container
+      justifyContent="center"
     >
-      <CircularProgress/>
+      <CircularProgress />
     </Grid>
   );
 };

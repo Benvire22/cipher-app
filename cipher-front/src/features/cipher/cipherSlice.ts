@@ -14,7 +14,7 @@ export const initialState: CipherState = {
 };
 
 export const cipherSlice = createSlice({
-  name: "cipher",
+  name: 'cipher',
   initialState,
   reducers: {},
   extraReducers: (builder) => {
@@ -29,7 +29,7 @@ export const cipherSlice = createSlice({
     builder.addCase(fetchEncoded.pending, (state) => {
       state.isLoading = true;
     }).addCase(fetchEncoded.fulfilled, (state, {payload: encoded}) => {
-      state.decode = encoded;
+      state.encode = encoded;
       state.isLoading = false;
     }).addCase(fetchEncoded.rejected, (state) => {
       state.isLoading = false;
@@ -38,7 +38,7 @@ export const cipherSlice = createSlice({
     builder.addCase(fetchDecoded.pending, (state) => {
       state.isLoading = true;
     }).addCase(fetchDecoded.fulfilled, (state, {payload: decoded}) => {
-      state.encode = decoded;
+      state.decode = decoded;
       state.isLoading = false;
     }).addCase(fetchDecoded.rejected, (state) => {
       state.isLoading = false;

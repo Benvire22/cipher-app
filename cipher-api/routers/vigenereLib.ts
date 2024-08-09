@@ -25,12 +25,12 @@ const letterShift = (letter: string, shift: number, forward: boolean) => {
         charCode = 97 + ((charCode + shift - 97 + 26) % 26);
     }
     return charCode;
-}
+};
 
 const findOffset = (letter: string) => {
     let charCode: number = letter.charCodeAt(0) - 65;
     charCode = (charCode > 32) ? charCode - 32 : charCode;
     return charCode % 26;
-}
+};
 
 export default vigenereCipher;
